@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        /* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body and General Styling */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+/* Header Section */
+header {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 50px 0;
+}
+
+header .logo h1 {
+    font-size: 2.5em;
+}
+
+header .tagline {
+    font-size: 1.2em;
+    font-style: italic;
+}
+
+/* About Section */
+#about {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 50px 20px;
+    background-color: #fff;
+}
+
+#about .about-content {
+    max-width: 1000px;
+    display: flex;
+    align-items: center;
+}
+
+#about .profile-image {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    margin-right: 30px;
+}
+
+#about .bio h2 {
+    font-size: 2em;
+    margin-bottom: 10px;
+}
+
+#about .bio p {
+    font-size: 1.1em;
+}
+
+/* Skills Section */
+#skills {
+    background-color: #e2e2e2;
+    padding: 50px 20px;
+    text-align: center;
+}
+
+#skills h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+#skills ul {
+    list-style: none;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+#skills li {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+/* Projects Section */
+#projects {
+    padding: 50px 20px;
+    background-color: #fff;
+}
+
+#projects h2 {
+    text-align: center;
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+.project {
+    display: flex;
+    margin-bottom: 40px;
+}
+
+.project-image {
+    width: 300px;
+    height: 200px;
+    object-fit: cover;
+    margin-right: 20px;
+}
+
+.project-details h3 {
+    font-size: 1.8em;
+    margin-bottom: 10px;
+}
+
+.project-details p {
+    font-size: 1.1em;
+}
+
+/* Resume Section */
+#resume {
+    padding: 50px 20px;
+    background-color: #f4f4f4;
+    text-align: center;
+}
+
+#resume a {
+    color: #333;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+#resume a:hover {
+    text-decoration: underline;
+}
+
+/* Contact Section */
+#contact {
+    padding: 50px 20px;
+    background-color: #e2e2e2;
+    text-align: center;
+}
+
+#contact h2 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+#contact ul {
+    list-style: none;
+    font-size: 1.2em;
+}
+
+#contact a {
+    color: #333;
+    text-decoration: none;
+}
+
+#contact a:hover {
+    text-decoration: underline;
+}
+
+/* Footer Section */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+}
+
+footer a {
+    color: #fff;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+    </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Personal Portfolio of [Your Name]">
+    <title>[Your Name]'s Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- Header Section -->
+    <header>
+        <div class="logo">
+            <h1>[Your Name]</h1>
+        </div>
+        <p class="tagline">Web Developer | Designer | Problem Solver</p>
+    </header>
+
+    <!-- About Section -->
+    <section id="about">
+        <div class="about-content">
+            <img src="your-photo.jpg" alt="Your Photo" class="profile-image">
+            <div class="bio">
+                <h2>About Me</h2>
+                <p>Hi! I'm [Your Name], a passionate web developer with a knack for creating responsive and interactive websites. I have experience working with HTML, CSS, JavaScript, and various front-end frameworks. My goal is to combine creativity with functionality to build websites that are both visually appealing and user-friendly.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills">
+        <h2>Skills</h2>
+        <ul>
+            <li>HTML5 & CSS3</li>
+            <li>JavaScript (ES6+)</li>
+            <li>React.js & Vue.js</li>
+            <li>Responsive Design</li>
+            <li>Version Control (Git)</li>
+            <li>UI/UX Design</li>
+        </ul>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects">
+        <h2>My Projects</h2>
+        <div class="project">
+            <img src="project1.jpg" alt="Project 1" class="project-image">
+            <div class="project-details">
+                <h3>Project 1 Title</h3>
+                <p>A brief description of Project 1. This project involves building a responsive website using HTML, CSS, and JavaScript.</p>
+            </div>
+        </div>
+        <div class="project">
+            <img src="project2.jpg" alt="Project 2" class="project-image">
+            <div class="project-details">
+                <h3>Project 2 Title</h3>
+                <p>A brief description of Project 2. This project was built with React.js to create an interactive user interface.</p>
+            </div>
+        </div>
+        <!-- Add more projects as needed -->
+    </section>
+
+    <!-- Resume Section -->
+    <section id="resume">
+        <h2>Resume</h2>
+        <p>Download my <a href="resume.pdf" download>resume</a> in PDF format.</p>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+        <h2>Contact</h2>
+        <p>Feel free to reach out to me!</p>
+        <ul>
+            <li>Email: <a href="mailto:yourname@example.com">yourname@example.com</a></li>
+            <li>Phone: (123) 456-7890</li>
+            <li>LinkedIn: <a href="https://www.linkedin.com/in/yourprofile" target="_blank">linkedin.com/in/yourprofile</a></li>
+        </ul>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 [Your Name]. All rights reserved.</p>
+        <p><a href="#about">Back to Top</a></p>
+    </footer>
+
+</body>
+</html>
