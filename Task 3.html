@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Basic Calculator</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Arial', sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #f7f7f7;
+        }
+
+        .calculator {
+            background-color: #333;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+            width: 280px;
+        }
+
+        .display {
+            background-color: #222;
+            color: white;
+            font-size: 2.5rem;
+            padding: 20px;
+            border-radius: 8px;
+            text-align: right;
+            margin-bottom: 20px;
+            height: 60px;
+            overflow: hidden;
+        }
+
+        .buttons {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 10px;
+        }
+
+        .button {
+            background-color: #444;
+            color: white;
+            font-size: 1.5rem;
+            padding: 20px;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+            text-align: center;
+        }
+
+        .button:hover {
+            background-color: #555;
+        }
+
+        .button.operator {
+            background-color: #ff9800;
+        }
+
+        .button.operator:hover {
+            background-color: #e68900;
+        }
+
+        .button.equal {
+            background-color: #4CAF50;
+        }
+
+        .button.equal:hover {
+            background-color: #45a049;
+        }
+
+        .button.clear {
+            background-color: #f44336;
+        }
+
+        .button.clear:hover {
+            background-color: #e53935;
+        }
+
+    </style>
+</head>
+<body>
+    <!-- Calculator Container -->
+    <div class="calculator">
+        <!-- Display Screen -->
+        <div class="display" id="display">0</div>
+        <!-- Buttons Container -->
+        <div class="buttons">
+            <button class="button clear" id="clear">C</button>
+            <button class="button operator" id="divide">/</button>
+            <button class="button operator" id="multiply">*</button>
+            <button class="button operator" id="subtract">-</button>
+
+            <button class="button" id="7">7</button>
+            <button class="button" id="8">8</button>
+            <button class="button" id="9">9</button>
+            <button class="button operator" id="add">+</button>
+
+            <button class="button" id="4">4</button>
+            <button class="button" id="5">5</button>
+            <button class="button" id="6">6</button>
+            <button class="button equal" id="equal">=</button>
+
+            <button class="button" id="1">1</button>
+            <button class="button" id="2">2</button>
+            <button class="button" id="3">3</button>
+            <button class="button" id="0">0</button>
+
+            <button class="button" id="decimal">.</button>
+        </div>
+    </div>
+
+    <script>
+        // Get references to display and buttons
+        const display = document.getElementById('display');
+        const buttons = Array.from(document.getElementsByClassName('button'));
+
+        let currentInput = '0';  // Store current input
+        let operator = null;     // Store operator for operations
+        let previousInput = '';  // Store previous input
+
+        // Function to update the display
+        function updateDisplay(value) {
+            display.textContent = value;
+        }
+
+        // Function to handle button clicks
+        buttons.forEach(but
