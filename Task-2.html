@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Landing Page</title>
+    <style>
+        /* General Reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* Body Styling */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        /* Header Styling */
+        header {
+            background-color: #4CAF50;
+            color: white;
+            text-align: center;
+            padding: 50px 0;
+        }
+
+        header h1 {
+            font-size: 3rem;
+            margin-bottom: 10px;
+        }
+
+        header p {
+            font-size: 1.2rem;
+            margin-bottom: 20px;
+        }
+
+        header .cta-btn {
+            padding: 10px 20px;
+            background-color: #ff5722;
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            border-radius: 5px;
+            margin-top: 20px;
+        }
+
+        header .cta-btn:hover {
+            background-color: #e64a19;
+        }
+
+        /* Navigation Bar */
+        nav ul {
+            list-style-type: none;
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            padding: 10px;
+        }
+
+        nav ul li {
+            display: inline;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-size: 1.1rem;
+            text-transform: uppercase;
+        }
+
+        nav ul li a:hover {
+            border-bottom: 2px solid white;
+        }
+
+        /* Features Section */
+        #features {
+            display: flex;
+            justify-content: space-around;
+            margin: 50px 0;
+        }
+
+        .feature-box {
+            background-color: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            width: 30%;
+        }
+
+        .feature-box h2 {
+            color: #4CAF50;
+            margin-bottom: 15px;
+        }
+
+        .feature-box p {
+            font-size: 1.1rem;
+        }
+
+        /* Call to Action Section */
+        #cta {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 50px 0;
+        }
+
+        #cta h2 {
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+        }
+
+        #cta p {
+            font-size: 1.2rem;
+            margin-bottom: 20px;
+        }
+
+        #cta .cta-btn {
+            padding: 12px 25px;
+            background-color: #ff5722;
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            border-radius: 5px;
+        }
+
+        #cta .cta-btn:hover {
+            background-color: #e64a19;
+        }
+
+        /* Footer Section */
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            margin-top: 50px;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            #features {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .feature-box {
+                width: 80%;  /* Make feature boxes take up more width on smaller screens */
+                margin-bottom: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Header Section -->
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#features">Features</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+        <h1>Welcome to My Landing Page</h1>
+        <p>Learn how to create amazing websites with HTML and CSS</p>
+        <a href="#cta" class="cta-btn">Get Started</a>
+    </header>
+
+    <!-- Main Section -->
+    <section id="features">
+        <div class="feature-box">
+            <h2>Feature One</h2>
+            <p>Discover how to build responsive layouts.</p>
+        </div>
+        <div class="feature-box">
+            <h2>Feature Two</h2>
+            <p>Learn to implement interactive designs with ease.</p>
+        </div>
+        <div class="feature-box">
+            <h2>Feature Three</h2>
+            <p>Enhance your skills in creating dynamic content.</p>
+        </div>
+    </section>
+
+    <!-- Call to Action Section -->
+    <section id="cta">
+        <h2>Ready to Start Your Journey?</h2>
+        <p>Sign up today and become a web development expert.</p>
+        <a href="#signup" class="cta-btn">Sign Up Now</a>
+    </section>
+
+    <!-- Footer Section -->
+    <footer>
+        <p>&copy; 2024 My Landing Page. All rights reserved.</p>
+    </footer>
+</body>
+</html>
